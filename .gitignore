@@ -1,1 +1,2 @@
-# No tracking of env file
+# Avoid credential tracking
+.env
