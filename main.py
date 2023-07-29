@@ -1,13 +1,7 @@
 import logIn
-import scrape_tl
-import time
 
 def main():
-    logIn.logInPath()
-
-    time.sleep(3)
-
-    scrape_tl.scrape()
+    logIn.Scrape()
 
     while (True):
         pass
