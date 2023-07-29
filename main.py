@@ -1,7 +1,7 @@
-import logIn
+import scrape
 
 def main():
-    logIn.Scrape()
+    scrape.Scrape()
 
     while (True):
         pass

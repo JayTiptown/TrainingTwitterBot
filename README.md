@@ -22,7 +22,9 @@ This twitter bot uses selenium web driver to scrape twitter timelines and obtain
 
 6. Insert your username and password credentials into the .env file in your IDE. 
 
-7. Run the program. You should see a new chrome window open. If this fails, you might have been signed into twitter already. In this case, sign out, kill the program, and rerun. If you were already signed out and it still fails, you might have used the wrong chromedriver version. 
+7. Run the program. You should see a new chrome window open. If this fails, you may have been signed into twitter already. In this case, sign out, kill the program, and rerun. If you were already signed out and it still fails, you may have used the wrong chromedriver version. 
+
+8. Once the program has finished running, you should see a csv file that has been downloaded to your system. Running the program may take a long time depending on how many tweets the program is scraping. You can adjust the amount of tweets you want per csv by modifying the 'if' statement in scrape.py, but it is currently set to 30 tweets. The csv file does not change name after the program is completed so make sure to rename the file before rerunning.
 
 WARNING: This bot has not been thoroughly tested for avoiding twitter's newly improved bot detection algorithms. Only primitive avoidance measures are used. Excessive use of the bot may result in IP blocking by Twitter, which may prevent your ability to use the bot or even access Twitter on your device. Use at your own discretion.
 

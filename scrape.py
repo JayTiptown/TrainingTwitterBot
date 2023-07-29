@@ -69,9 +69,6 @@ def Scrape():
     articles = driver.find_elements(By.XPATH, "//article[@data-testid='tweet']")
     while True:
         for _ in articles:
-
-            time.sleep(2)
-
             userTag = driver.find_element(By.XPATH, ".//div[@data-testid='User-Name']").text
             print(userTag)
             UserTags.append(userTag)
@@ -94,10 +91,8 @@ def Scrape():
         articles = driver.find_elements(By.XPATH, "//article[@data-testid='tweet']")
         tweetSet = list(set(Tweets))
 
-        if len(tweetSet) > 30: #Change based on how many tweets you want to scrape
+        if len(tweetSet) > 5: #Change based on how many tweets you want to scrape
             break
-
-        print(tweetSet)
     
     import pandas as pd
 
