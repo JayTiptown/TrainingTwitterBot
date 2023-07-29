@@ -1,2 +1,11 @@
 # Avoid credential tracking
 .env
+
+# macOS system files
+.DS_Store
+
+#ignore pycache
+__pycache__/
+
+#ignore chromedriver
+chromedriver

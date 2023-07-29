@@ -20,8 +20,10 @@ This twitter bot uses selenium web driver to scrape twitter timelines and obtain
 5. Follow relevant accounts through twitter. An inital list was provided that are considered "high signal". 
     High Signal Accounts: @ljxie, @tongnk, @kankanivishal, @zaki, @gavofyork, @cburniske, @delitzer, @wyatt_benmo, @divine_economy, @dynamo_patri
 
-6. Insert your username and password credentials into the env file in your IDE. 
+6. Insert your username and password credentials into the .env file in your IDE. 
 
 7. Run the program. You should see a new chrome window open. If this fails, you might have been signed into twitter already. In this case, sign out, kill the program, and rerun. If you were already signed out and it still fails, you might have used the wrong chromedriver version. 
 
 WARNING: This bot has not been thoroughly tested for avoiding twitter's newly improved bot detection algorithms. Only primitive avoidance measures are used. Excessive use of the bot may result in IP blocking by Twitter, which may prevent your ability to use the bot or even access Twitter on your device. Use at your own discretion.
+
+NOTE: Twitter's login pages, bot detection algorithms, and rate limits have all been changing recently. As a result, this bot may become incompatible/lose functionality once new changes are implemented. 

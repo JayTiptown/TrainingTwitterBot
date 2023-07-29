@@ -8,18 +8,17 @@ import time
 import random
 import os
 
-backspace_weights = [98, 2]
-backspace_exec = 1
-no_backspace_exec = 0
+def logInPath():
+    backspace_weights = [98, 2]
+    backspace_exec = 1
 
-load_dotenv()
+    load_dotenv()
 
-from_user = os.getenv("TWITTER_USER")
-from_pass = os.getenv("TWITTER_PASS")
-
-def logIn():
+    from_user = os.getenv("TWIT_USERNAME")
+    from_pass = os.getenv("TWIT_PASSWORD")
+    
     driver = webdriver.Chrome()
-    driver.get("http://www.twitter.com") #Switch to http://www.x.com if necessary
+    driver.get("https://twitter.com/i/flow/login") #Switch to http://www.x.com if necessary
 
     time.sleep(random.uniform(1.0, 5.0)) #randomized timings for actions to avoid bot detection <-- I love copilot bruh. this just saved me so much typing
 
@@ -52,5 +51,5 @@ def logIn():
     log_in_button.click()
 
 
-    while (True): #KEEP: meant to keep the program running until the user exits
-        pass
+    # while (True): #KEEP: meant to keep the program running until the user exits
+    #     pass
